@@ -33,7 +33,5 @@ app.use((req, res, next) => {
     // hacky trick, router is just a handler
     router(req, res, next);
 });
-
 app.use(router);
-
 app.listen(3000);
